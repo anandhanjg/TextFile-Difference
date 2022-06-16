@@ -41,7 +41,7 @@ const findDifferences=async (folder1,folder2)=>{
     try {
       let data =  await findDifferences(folder1,folder2);
       console.log("OUTPUT :-");
-      console.log(`${data.new.length} are files created, ${data.modified} files are modified, ${data.deleted.length} files are deleted, ${data.found.length-data.modified.length} files are remain same`)
+      console.log(`${data.new.length} are files created, ${data.modified.length} files are modified, ${data.deleted.length} files are deleted, ${data.found.length-data.modified.length} files are remain same`)
       console.table(data);
     } catch (error) {
       console.log(error.message);    
